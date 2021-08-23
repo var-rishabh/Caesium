@@ -1,5 +1,3 @@
-const nav = document.querySelector(".navbar");
-
 $(document).ready(function () {
     $(window).scroll(function () {
       let scroll = $(window).scrollTop();
