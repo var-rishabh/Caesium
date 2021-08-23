@@ -1,50 +1,99 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 .navbar {
-    width: 100%;
-    position: fixed;
-    height: 70px;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    padding: 25px;
+  width: 100%;
+  position: fixed;
+  height: 70px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  padding: 25px;
+}
+.logo {
+  font-family: "Risque", cursive;
+  color: white;
+  font-size: 1.8em;
 }
 .collections {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: row;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 #collections {
-    padding: 15px;
+  padding: 1.5em;
 }
 a {
-    font-size: 20px;
-    color: white;
-    text-decoration: none;
-    padding-bottom: 5px;
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding-bottom: 5px;
+  font-family: "Quattrocento", serif;
 }
 #collections a:hover {
-    border-bottom: 5px solid white;
+  border-bottom: 5px solid white;
+}
+.ar {
+  margin-right: 10px;
+  border: 1px solid white;
+  padding: 8px 15px;
+  border-radius: 50px;
+}
+.ar:hover {
+  color: black;
+  background-color: white;
+}
+.ar a:hover {
+  color: black;
+}
+.landing {
+  padding: 0 50px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 85vh;
+  background-image: url("./images/bg1.jpg");
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-family: "Exo", sans-serif;
+}
+.landing p {
+  color: white;
+  font-size: 4.5em;
+  width: 50%;
 }
 .sec1 {
-    padding: 20px;
-    background-image: url("./images/bg1.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: left;
-    align-items: center;
+  padding: 20px;
+  background-color: black;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.navbar {
+  animation: 1.5s ease-out 0s 1 slideIn;
+}
+.landing p {
+  animation: 1s ease-out 0s 1 slideIn;
 }
